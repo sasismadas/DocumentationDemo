@@ -1,0 +1,51 @@
+describe('Click Functionality', () => {
+  // Test navigation links
+  describe('Navigation Links', () => {
+    it('should navigate to About Me page when About Me link is clicked', () => {
+      const aboutLink = document.querySelector('nav a[href="about.html"]');
+      aboutLink.click();
+      expect(location.pathname).toBe('/about.html');
+    });
+
+    it('should navigate to My Skills page when My Skills link is clicked', () => {
+      const skillsLink = document.querySelector('nav a[href="skills.html"]');
+      skillsLink.click();
+      expect(location.pathname).toBe('/skills.html');
+    });
+
+    it('should navigate to My Projects page when My Projects link is clicked', () => {
+      const projectsLink = document.querySelector('nav a[href="projects.html"]');
+      projectsLink.click();
+      expect(location.pathname).toBe('/projects.html');
+    });
+
+    it('should navigate to Contact Me page when Contact Me link is clicked', () => {
+      const contactLink = document.querySelector('nav a[href="contact.html"]');
+      contactLink.click();
+      expect(location.pathname).toBe('/contact.html');
+    });
+  });
+
+  // Test active class on navigation links
+  describe('Active Class', () => {
+    it('should add active class to About Me link when About Me page is loaded', () => {
+      const aboutLink = document.querySelector('nav a[href="about.html"]');
+      expect(aboutLink.classList).toContain('active');
+    });
+
+    it('should add active class to My Skills link when My Skills page is loaded', () => {
+      const skillsLink = document.querySelector('nav a[href="skills.html"]');
+      expect(skillsLink.classList).toContain('active');
+    });
+
+    it('should add active class to My Projects link when My Projects page is loaded', () => {
+      const projectsLink = document.querySelector('nav a[href="projects.html"]');
+      expect(projectsLink.classList).toContain('active');
+    });
+
+    it('should add active class to Contact Me link when Contact Me page is loaded', () => {
+      const contactLink = document.querySelector('nav a[href="contact.html"]');
+      expect(contactLink.classList).toContain('active');
+    });
+  });
+});
