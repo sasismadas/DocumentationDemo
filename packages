@@ -1,0 +1,19 @@
+{
+  "name": "documentation-demonstration",
+  "version": "0.1.3",
+  "description": "Demo repository for new documentation processes",
+  "author": "Sarah McGeough",
+  "license": "MIT",
+  "homepage": "https://github.com/sasismadas/DocumentationDemo/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasismadas/DocumentationDemo"
+  },
+  "bugs": {
+    "url": "git+https://github.com/sasismadas/DocumentationDemo/issues"
+  },
+  "engines": {
+    "npm": ">=5.5.0",
+    "node": ">=9.3.0"
+  }
+}
