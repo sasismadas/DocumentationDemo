@@ -1,0 +1,12 @@
+// Add active class to clicked navigation link
+const links = document.querySelectorAll('nav a');
+links.forEach(link => {
+  if (link.href === location.href) {
+    link.classList.add('active');
+  }
+});
+
+// Show current year in footer
+const year = new Date().getFullYear();
+const footer = document.querySelector('footer');
+footer.innerHTML = `<p>&copy; ${year} My Personal Website</p>`;
