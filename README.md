@@ -1,6 +1,6 @@
-# DocumentationDemo
+# 
 
-<h1 align="center">Welcome to <%= projectName %> 👋</h1>
+<h1 align="center">Welcome to DocumentationDemo 👋</h1>
 <p>
 This repository was created for a demonstration of the new Documentation templates, methodologies and styles.
 <br>
